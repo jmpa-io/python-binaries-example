@@ -6,7 +6,7 @@ on:
       - '.github/workflows/cicd.yml'
       - 'cmd/**'
       - 'Makefile*'
-      - 'requirements.txt'
+      - 'requirements*.txt'
 
 jobs:
   build:
