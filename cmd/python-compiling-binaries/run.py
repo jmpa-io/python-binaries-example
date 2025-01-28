@@ -3,7 +3,6 @@
 
 import os
 import cmd
-import time
 import argparse
 from datetime import datetime
 
@@ -18,7 +17,7 @@ class HelloWorldCLI(cmd.Cmd):
 
     def do_greeting(self, line):
         """Print a greeting!"""
-        print(f"🌍 Hello world!")
+        print("🌍 Hello world!")
 
     def do_get_current_directory(self, line):
         """Prints the current directory."""
@@ -30,7 +29,7 @@ class HelloWorldCLI(cmd.Cmd):
 
     def do_quit(self, line):
         """Exit interactive CLI."""
-        print(f"👋 Goodbye!")
+        print("👋 Goodbye!")
         return True
 
     def emptyline(self):

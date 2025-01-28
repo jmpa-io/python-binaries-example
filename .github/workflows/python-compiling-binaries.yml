@@ -1,19 +1,19 @@
 ---
-name: CI/CD
+name: Python - Compiling Binaries
 on:
   push:
     paths:
-      - '.github/workflows/cicd.yml'
-      - 'cmd/**'
+      - '.github/workflows/python-compiling-binaries.yml'
       - 'Makefile*'
-      - 'requirements*.txt'
+      - 'cmd/python-compiling-binaries/*'
+      - 'cmd/python-compiling-binaries/requirements*.txt'
 
 jobs:
   build:
     strategy:
       matrix:
         os: [macos-latest, ubuntu-latest, windows-latest]
-        
+
     runs-on: ${{ matrix.os }}
 
     steps:
